@@ -128,7 +128,7 @@ Dentro do primeiro <header> da página e antes do <h1> iremos adicionar um eleme
 
 E dentro do <header> do <article> vamos fazer a mesma coisa, mas agora depois do <h3>, e no atributo alt colocaremos *Editor de texto mostrando códigos HTML*.
 
-Usar o site [tinypng](https://tinypng.com/) para remover alguns dados desnecessários das imagens e otimizar algumas metainformações.
+Dica: Usar o site [tinypng](https://tinypng.com/) para remover alguns dados desnecessários das imagens e otimizar algumas metainformações.
 
 ## Listas
 
