@@ -18,6 +18,8 @@ E há um último detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem a
 
 O *a:hover* do exemplo significa que a âncora também terá essa aparência quando o usuário passar o mouse por cima de um *hyperlink*.
 
+![image-20220620175625168](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620175625168.png)
+
  
 
 ## ID x Classe
@@ -33,6 +35,8 @@ ID: é representado pelo símbolo # (hash) seguido de um nome para esse ID.
 Classe: a classe é representada de forma parecida do ID, mas é precedida por um ponto em vez do hash.
 
 E a diferença mais importante entre eles é a forma como devem ser usados: o ID só pode ser usado uma vez em uma página HTML enquanto a classe não tem restrições.
+
+![image-20220620175742418](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620175742418.png)
 
  
 
@@ -58,6 +62,8 @@ Quando estamos criando o layout de um site o navegador representa cada elemento 
 - As bordas (border) ;
 - O padding é um espaçamento entre as bordas e o conteúdo, a diferença para as margens é que declarações de imagem de fundo funcionam nele;
 - O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, um vídeo;
+
+![image-20220620180519868](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620180519868.png)
 
  
 
@@ -95,17 +101,19 @@ A primeira é colocando um valor para as partes superior e inferior e depois par
 
 O valor de 10 *pixels* se refere ao eixo Y, ou partes superior e inferior, e os 5 *pixels* se referem aos lados esquerdo e direito.
 
- 
+ 								![image-20220620181258567](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181258567.png)
 
 A segunda forma é dando valores para cada lado do *box*.
 
 Então começamos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior com 5 pixels e por último o lado esquerdo com 0, e sempre nessa ordem.
 
+![image-20220620181359871](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181359871.png)
+
 Uma boa dica também é que quando o valor for 0 não precisamos não precisamos colocar a unidade.
 
- 
-
 A terceira forma é com as propriedades específicas para cada lado, até agora tínhamos visto atalhos para essas propriedades.
+
+![image-20220620181504021](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181504021.png)
 
 Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
 
@@ -117,19 +125,21 @@ A propriedade *background* também é um atalho para várias propriedades, mas i
 
 Por enquanto veremos apenas como mudar a cor de fundo.
 
- 
+ ![image-20220620181545660](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181545660.png)
 
 E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
 
 A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho *background*.
 
- 
+ ![image-20220620181639269](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181639269.png)
 
 ### Border
 
 Vimos que a propriedade *border* pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso.
 
 A largura pode ser usada com várias unidades, como px, em e mm. A cor pode ser atribuída pelo nome ou por um código hexadecimal, assim como fizemos com o *background*, e o estilo é representada por palavras-chave, vamos ver algumas delas:
+
+![image-20220620181909906](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620181909906.png)
 
  
 
@@ -141,17 +151,21 @@ A largura pode ser usada com várias unidades, como px, em e mm. A cor pode ser 
 
 E aproveitando que mostrei esse código temos que falar sobre como separar a estilização dos lados de uma borda.
 
+![image-20220620182030937](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620182030937.png)
+
 E se você não quiser usar a propriedade *border* existem as propriedade específicas para cada aspecto de uma borda, são elas *border-width* para a largura, *border-color* para a cor e *border-style* para o estilo.
+
+![image-20220620182102514](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620182102514.png)
 
 Aqui temos o mesmo código anterior de duas formas diferentes, a primeira com o atalho *border* e a segunda com cada propriedade específica.
 
 E depois disso podemos juntar os lados com os aspectos de uma borda e criar uma regra mais específica ainda.
 
- 
+ ![image-20220620182122469](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620182122469.png)
 
 Border-radius
 
-E a última propriedade é o *border-radius*, ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mas as mais comuns são os pixels e a porcentagem.
+E a última propriedade é o *border-radius*, ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mas as mais comuns são os **pixels e a porcentagem**.
 
 Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no *padding* e *margin* - topo, direita, inferior e esquerda - conseguimos alterar cada canto separadamente.
 
@@ -175,22 +189,54 @@ Podemos manter o background branco, mas vamos diminuir a largura das bordas para
 
 Já sabemos que podemos mudar cor e tamanho de algumas fontes, e agora vamos nos aprofundar nisso.
 
- 
-
 ### font-family
 
 Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater às fontes seguras, chamadas de web safe fonts.
 
 Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupação.
 
- 
+ ![image-20220620185334677](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620185334677.png)
 
 ### font-size
 
 O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele mas por enquanto os pixels são suficientes para nós.
 
- 
+ ![image-20220620185418573](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620185418573.png)
 
 ### font-style
 
 Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor *italic* para ele, mas se precisar tirar o itálico de um texto você pode usar o valor *normal*.
+
+![image-20220620185433484](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620185433484.png)
+
+### font-weight
+
+Altera o peso do texto, existem várias palavras chaves para o valor e alguns valores numéricos também. Em fontes mais simples os valores *normal* (comum da fonte) e *bold* (negrito) já resolvem.
+
+![image-20220620185816022](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620185816022.png)  
+
+
+
+### text-transform
+
+Altera o texto entre maiúsculos e minúsculos, *uppercase*: caixa alta; *lowercase*: caixa baixa; *capitalize*: primeira letra de cada palavra em maiúsculo.
+
+![image-20220620190028883](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620190028883.png)
+
+### text-decoration
+
+Usado para dar destaque no texto, *underline*: linha abaixo da palavra; *overline*: linha acima da palavra; *line-throught*: linha cortando o texto.
+
+![image-20220620190241580](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620190241580.png)
+
+### list-style-type
+
+Existem várias opções de marcadores, para listas ordenadas e não-ordenadas, *square*: quadrado; *upper-roman*: algarismo romano maiúsculo; *\1F44D*: esse emoji -> :+1:
+
+![image-20220620191506998](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620191506998.png)
+
+
+
+Podemos também adicionar imagens como símbolos dos marcadores:
+
+![image-20220620191556768](C:\Users\pietr\AppData\Roaming\Typora\typora-user-images\image-20220620191556768.png)
