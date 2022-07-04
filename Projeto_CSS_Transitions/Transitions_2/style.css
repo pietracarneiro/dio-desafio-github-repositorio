@@ -41,7 +41,7 @@
 }
 
 .checkbox .trace:nth-child(3) {
-    top: 66px;
+    top: 66px; /*distancia entre a checkbox e o topo da margem*/
     transform: rotate(0);
 }
 
